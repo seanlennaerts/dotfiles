@@ -1,0 +1,20 @@
+[core]
+	excludesfile = /Users/Sean/.gitignore_global
+	editor = '/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' -n -w
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[user]
+	name = Sean Lennaerts
+	email = seanlenny@gmail.com
+[color]
+	ui = auto
+[push]
+	default = upstream
+[merge]
+	conflictstyle = diff3
+[credential]
+	helper = osxkeychain
