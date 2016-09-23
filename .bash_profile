@@ -7,6 +7,9 @@ alias vc="cd ~/Documents/version-control"
 # SSH to UBC Linux Server
 alias ubc="ssh -Y k4c9@remote.ugrad.cs.ubc.ca"
 
+# Go to CPSC310 directory
+alias 310="cd ~/Documents/CPSC310/cpsc310project"
+
 # Enable tab completion
 source ~/.git-completion.bash
 
