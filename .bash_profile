@@ -11,7 +11,7 @@ alias ubc="ssh -Y k4c9@remote.ugrad.cs.ubc.ca"
 alias 310="cd ~/Documents/CPSC310/cpsc310project"
 
 # Go to air monster (dropbox to desktop)
-alias air="cd ~/Dropbox/Air\ Monster"
+alias send="cd /Volumes/Air\ Monster\ Local"
 
 # Enable tab completion
 source ~/.git-completion.bash
