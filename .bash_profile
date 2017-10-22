@@ -10,6 +10,10 @@ alias ubc="ssh -Y k4c9@remote.ugrad.cs.ubc.ca"
 # Go to CPSC310 directory
 alias 310="cd ~/Documents/CPSC310/cpsc310project"
 
+alias 313="cd ~/Documents/CPSC313"
+alias 317="cd ~/Documents/CPSC317"
+alias 304="cd ~/Documents/CPSC304"
+
 # Go to air monster (dropbox to desktop)
 alias send="cd /Volumes/Air\ Monster\ Local"
 
