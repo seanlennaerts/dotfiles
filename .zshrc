@@ -2,12 +2,12 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/Sean/.oh-my-zsh
+export ZSH=/Users/sean/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="wild-cherry"
+ZSH_THEME="random"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -83,28 +83,20 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# Open sublime from terminal
-alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
-
-# Go to version-control directory
-alias vc="cd ~/Documents/version-control"
-
-# SSH to UBC Linux Server
+alias brewup='brew update; brew upgrade; brew cleanup; brew doctor'
+alias dev='cd ~/Documents/Development'
 alias ubc="ssh -Y k4c9@remote.ugrad.cs.ubc.ca"
 
-alias 415="cd ~/Documents/CPSC415"
-alias term1="cd /Users/Sean/Dropbox/++Term\ 1/"
 
-#to run php71
-export PATH=/usr/local/php5/bin:$PATH
 
-#to run ruby
-export PATH="$HOME/.rbenv/bin:$PATH"
+# Config
+# For rbenv to work properly
 eval "$(rbenv init -)"
 
-# update brew
-alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
+# For pyenv to work properly
+eval "$(pyenv init -)"
 
-
-export PATH="/usr/local/bin:$PATH"
+# For nvm to work properly
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
