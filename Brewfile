@@ -3,12 +3,11 @@ cask_args appdir: "/Applications"
 tap "caskroom/cask"
 
 brew "git"
-brew "heroku-toolbelt"
+# brew "heroku-toolbelt" # removed because it prematurely installs node
 brew "mas"
-brew "nvm"
+# brew "nvm" # not officially supported to install via homebrew
 brew "pyenv"
 brew "rbenv"
-brew "ruby-build"
 brew "zsh"
 brew "zsh-completions"
 

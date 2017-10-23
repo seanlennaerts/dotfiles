@@ -1,0 +1,39 @@
+## Ruby development
+* https://github.com/rbenv/rbenv#homebrew-on-macos
+* http://sourabhbajaj.com/mac-setup/Ruby/
+* rbenv is ruby version manager
+* installed rbenv with homebrew (note rbenv automatically installs ruby-build)
+* `rbenv install 2.4.2` to install new ruby
+* `rbenv global 2.4.2` to make 2.4.2 globally used ruby
+* `rbenv global system` to rever to macOS ruby
+* `rbenv local 2.4.2` to use 2.4.2 locally
+* `rbenv versions` to see all installed rubys
+* ruby is installed in `~/.rbenv/versions/`
+
+## Python development
+* https://github.com/pyenv/pyenv#homebrew-on-mac-os-x
+* http://sourabhbajaj.com/mac-setup/Python/
+* pyenv is python version manager forked from rbenv
+* installed pyenv with homebrew
+* `pyenv install 3.6.3` to install new python
+* all same as rbenv
+* python is installed in `~/.pyenv/versions/`
+
+## Node development
+* https://github.com/creationix/nvm#installation
+* http://sourabhbajaj.com/mac-setup/Node.js/
+* nvm is node version manager
+* installed with script on github above
+* `nvm install node` installs latest node
+* `nvm ls` lists installed node versions
+* `nvm use node` to use latest node installed
+* `nvm alias default node` set latest installed node as default
+* node is installed in `~/.nvm/versions/`
+
+## Brew
+* https://docs.brew.sh/FAQ.html
+* `brew list` see installed brews
+* `brew install` install brew
+* `brew uninstall` uninstall brew
+* `brew cleanup` after installing
+* `brewup` alias I made to update
