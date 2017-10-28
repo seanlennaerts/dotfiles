@@ -7,7 +7,7 @@ export ZSH=/Users/sean/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="random"
+ZSH_THEME="sorin"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -83,13 +83,26 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias brewup='brew update; brew upgrade; brew cleanup; brew doctor'
-alias dev='cd ~/Documents/Development'
+
+# Sean Config
+
+# Aliases
+alias brewup="brew update; brew upgrade; brew cleanup; brew doctor"
+alias dev="cd ~/Documents/development"
 alias ubc="ssh -Y k4c9@remote.ugrad.cs.ubc.ca"
+alias iphone="react-native run-ios --device 'Sean iPhone'"
 
+# Functions
+# Show/hide hidden files in finder
+function hide () {
+    if [[ `defaults read com.apple.Finder AppleShowAllFiles` == "true" ]]
+    then
+        `defaults write com.apple.Finder AppleShowAllFiles false;killall Finder`
+    else
+        `defaults write com.apple.Finder AppleShowAllFiles true;killall Finder`
+    fi
+}
 
-
-# Config
 # For rbenv to work properly
 eval "$(rbenv init -)"
 
@@ -100,3 +113,14 @@ eval "$(pyenv init -)"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# For iterm title bar color to match One Dark theme
+# https://codematters.blog/custom-iterm2-titlebar-background-colors-a088c6f2ec60
+# echo -e "\033]6;1;bg;red;brightness;41\a"
+# echo -e "\033]6;1;bg;green;brightness;45\a"
+# echo -e "\033]6;1;bg;blue;brightness;62\a"
+
+# For iterm fix key bindings
+# https://stackoverflow.com/a/29403520
+bindkey "^U" backward-kill-line
+bindkey "^X^_" redo

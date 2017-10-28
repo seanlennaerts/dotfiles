@@ -23,7 +23,6 @@ cask "sequel-pro"
 cask "skype"
 cask "sublime-text"
 cask "transmission"
-cask "trim-enabler"
 cask "vlc"
 cask "xquartz"
 

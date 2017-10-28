@@ -37,3 +37,14 @@
 * `brew uninstall` uninstall brew
 * `brew cleanup` after installing
 * `brewup` alias I made to update
+
+## nvm
+* `npm list -g --depth=0` to see all globally installed
+
+## For 3rd party SSDs
+* https://apple.stackexchange.com/a/75956
+* `sudo trimforce enable` to turn on trim for all connected devices
+* `pmset -a sms 0` turns off sudden motion sensor for both battery and ac (-all)
+* `pmset -g` to see all power settings
+* Also recommended to turn of hard drive sleep
+* the other settings are unnecessary

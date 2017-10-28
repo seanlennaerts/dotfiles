@@ -16,6 +16,13 @@ done
 sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+###############################################################################
+
+# Symlink dotfiles
+ln -s ~/Documents/Development/dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/Documents/Development/dotfiles/.zshrc ~/.zshrc
+
+###############################################################################
 
 # Install homebrew if not already installed
 if test ! $(which brew); then
@@ -30,6 +37,7 @@ brew update
 brew bundle
 
 brew cleanup
+
 
 ###############################################################################
 
