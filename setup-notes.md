@@ -10,6 +10,14 @@
 * `rbenv versions` to see all installed rubys
 * ruby is installed in `~/.rbenv/versions/`
 
+### gem
+* ruby package manager
+* `gem env` to see information about install directory
+* `gem update --system` to update RubyGems
+* `gem list` to see all installed gems
+* `gem outdated` to see old gems, and `gem update` to update all gems
+* `gem cleanup` to remove outdated gems
+
 ## Python development
 * https://github.com/pyenv/pyenv#homebrew-on-mac-os-x
 * http://sourabhbajaj.com/mac-setup/Python/
@@ -48,3 +56,17 @@
 * `pmset -g` to see all power settings
 * Also recommended to turn of hard drive sleep
 * the other settings are unnecessary
+
+## Atom setup for React Native
+* install nuclide
+* in package settings for nuclide check "Install Recommended Packages on Startup"
+* setup flow:
+    * in package settings under nuclide-flow check "Use flow binary included in each project's..."
+    * check verson of flow in .flowconfig and `npm i flow-bin@0.53.0 --save-dev`
+    * don't need to install separate compilor to remove flow types. React Native ships with babel compiler and the "react-native" preset in .babelrc supports flow
+* setup eslint:
+    * install package "linter-eslint" and DON'T install "linter" dependency (nuclide can use any linter plugins out-of-the-box)
+    * `npm install --save-dev eslint-config-rallycoding`
+    * In project root make .eslintrc: `{"extends": "rallycoding"}`
+* Other cool packages:
+    * pigments

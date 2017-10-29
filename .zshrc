@@ -89,19 +89,20 @@ source $ZSH/oh-my-zsh.sh
 # Aliases
 alias brewup="brew update; brew upgrade; brew cleanup; brew doctor"
 alias dev="cd ~/Documents/development"
-alias ubc="ssh -Y k4c9@remote.ugrad.cs.ubc.ca"
+alias help="subl ~/Documents/development/dotfiles/setup-notes.md"
 alias iphone="react-native run-ios --device 'Sean iPhone'"
+alias ubc="ssh -Y k4c9@remote.ugrad.cs.ubc.ca"
 
 # Functions
 # Show/hide hidden files in finder
-function hide () {
-    if [[ `defaults read com.apple.Finder AppleShowAllFiles` == "true" ]]
-    then
-        `defaults write com.apple.Finder AppleShowAllFiles false;killall Finder`
-    else
-        `defaults write com.apple.Finder AppleShowAllFiles true;killall Finder`
-    fi
-}
+# function hide () {
+#     if [[ `defaults read com.apple.Finder AppleShowAllFiles` == "true" ]]
+#     then
+#         `defaults write com.apple.Finder AppleShowAllFiles false;killall Finder`
+#     else
+#         `defaults write com.apple.Finder AppleShowAllFiles true;killall Finder`
+#     fi
+# }
 
 # For rbenv to work properly
 eval "$(rbenv init -)"
