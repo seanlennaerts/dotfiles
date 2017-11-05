@@ -1,3 +1,6 @@
+# TODO
+* make symlinks automatic in setup.sh script
+
 1) better tab to auto complete:
 
 create file called ‘.inputrc’:

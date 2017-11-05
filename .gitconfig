@@ -1,8 +1,6 @@
 [user]
 	name = Sean Lennaerts
 	email = seanlenny@gmail.com
-[core]
-	editor = subl -n -w
 [push]
 	default = upstream
 [merge]

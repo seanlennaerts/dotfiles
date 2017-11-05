@@ -5,8 +5,8 @@ xcode-select --install
 
 # Make sure signed into AppStore
 while true; do
-  read -p "Did you sign in to AppStore? [y] " yn
-  case $yn in
+  read -p "Did you sign in to AppStore? " y
+  case $y in
     [yY]* ) break;;
     * ) exit;;
   esac
@@ -58,6 +58,11 @@ defaults write com.apple.dock autohide-time-modifier -float 0
 defaults write com.apple.dock autohide-delay -float 0
 # Removes all icons from dock (useful after fresh install)
 defaults write com.apple.dock persistent-apps -array
+
+# Specify the preferences directory
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/Documents/development/dotfiles/"
+# Tell iTerm2 to use the custom preferences in the directory
+defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 
 ###############################################################################
 

@@ -3,6 +3,7 @@
 * http://sourabhbajaj.com/mac-setup/Ruby/
 * rbenv is ruby version manager
 * installed rbenv with homebrew (note rbenv automatically installs ruby-build)
+* `rbenv install --list` to see available ruby versions
 * `rbenv install 2.4.2` to install new ruby
 * `rbenv global 2.4.2` to make 2.4.2 globally used ruby
 * `rbenv global system` to rever to macOS ruby
