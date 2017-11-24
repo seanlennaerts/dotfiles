@@ -63,7 +63,7 @@
 * in package settings for nuclide check "Install Recommended Packages on Startup"
 * setup flow:
     * in package settings under nuclide-flow check "Use flow binary included in each project's..."
-    * check verson of flow in .flowconfig and `npm i flow-bin@0.53.0 --save-dev`
+    * check verson of flow in .flowconfig and `npm i flow-bin@0.53.0 --save-dev` (UPDATE: use yarn instead. Using npm will delete all the dependencies that `react-native init` installed because `react-native init` uses yarn. Yarn also uses the package.json and produces the yarn.lock file. See https://yarnpkg.com/en/docs/migrating-from-npm for more :thumbsup:)
     * don't need to install separate compilor to remove flow types. React Native ships with babel compiler and the "react-native" preset in .babelrc supports flow
 * setup eslint:
     * install package "linter-eslint" and DON'T install "linter" dependency (nuclide can use any linter plugins out-of-the-box)

@@ -19,8 +19,9 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ###############################################################################
 
 # Symlink dotfiles
-ln -s ~/Documents/Development/dotfiles/.gitconfig ~/.gitconfig
-ln -s ~/Documents/Development/dotfiles/.zshrc ~/.zshrc
+ln -s ~/Documents/Development/dotfiles/gitconfig ~/.gitconfig
+ln -s ~/Documents/Development/dotfiles/zshrc ~/.zshrc
+ln -s ~/Documents/Development/dotfiles/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
 ###############################################################################
 
