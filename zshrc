@@ -117,3 +117,8 @@ export NVM_DIR="$HOME/.nvm"
 # https://stackoverflow.com/a/29403520
 bindkey "^U" backward-kill-line
 bindkey "^X^_" redo
+
+# golang
+# Setting go env
+# export GOPATH=$HOME/Documents/workspace
+# export PATH=$PATH:$GOPATH/bin

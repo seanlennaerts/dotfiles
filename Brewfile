@@ -9,19 +9,19 @@ brew "mas"
 brew "pyenv"
 brew "rbenv"
 brew "zsh"
-brew "zsh-completions"
+# brew "zsh-completions"
 brew "watchman" # for react native development
 brew "yarn" # fast dependency manager
 
 cask "adobe-acrobat-reader"
 cask "atom"
 cask "dropbox"
-cask "flux"
+# cask "flux"
 cask "franz"
 cask "google-chrome"
 cask "iterm2"
 cask "moom"
-cask "sequel-pro"
+# cask "sequel-pro"
 cask "skype"
 cask "sublime-text"
 cask "transmission"
@@ -29,6 +29,6 @@ cask "vlc"
 cask "xquartz"
 
 mas "Amphetamine", id: 937984704
-mas "iStudiez Pro", id: 402989379
+# mas "iStudiez Pro", id: 402989379
 mas "The Unarchiver", id: 425424353
-mas "Xcode", id:497799835
+# mas "Xcode", id:497799835
