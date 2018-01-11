@@ -12,6 +12,7 @@ brew "zsh"
 # brew "zsh-completions"
 brew "watchman" # for react native development
 brew "yarn" # fast dependency manager
+brew "golang"
 
 cask "adobe-acrobat-reader"
 cask "atom"
@@ -31,4 +32,4 @@ cask "xquartz"
 mas "Amphetamine", id: 937984704
 # mas "iStudiez Pro", id: 402989379
 mas "The Unarchiver", id: 425424353
-# mas "Xcode", id:497799835
+mas "Xcode", id:497799835

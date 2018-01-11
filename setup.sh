@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Install Xcode Command Line Tools (brew requirement)
-xcode-select --install
+# xcode-select --install
 
 # Make sure signed into AppStore
 while true; do
@@ -19,9 +19,9 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ###############################################################################
 
 # Symlink dotfiles
-ln -s ~/Documents/Development/dotfiles/gitconfig ~/.gitconfig
-ln -s ~/Documents/Development/dotfiles/zshrc ~/.zshrc
-ln -s ~/Documents/Development/dotfiles/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+ln -s ~/Documents/dev/dotfiles/gitconfig ~/.gitconfig
+ln -s ~/Documents/dev/dotfiles/zshrc ~/.zshrc
+# ln -s ~/Documents/dev/dotfiles/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
 ###############################################################################
 
@@ -61,7 +61,7 @@ defaults write com.apple.dock autohide-delay -float 0
 defaults write com.apple.dock persistent-apps -array
 
 # Specify the preferences directory
-defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/Documents/development/dotfiles/"
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/Documents/dev/dotfiles/"
 # Tell iTerm2 to use the custom preferences in the directory
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 

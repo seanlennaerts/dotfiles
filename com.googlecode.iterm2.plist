@@ -11,7 +11,7 @@
 	<key>AppleWindowTabbingMode</key>
 	<string>manual</string>
 	<key>CheckTestRelease</key>
-	<true/>
+	<false/>
 	<key>Custom Color Presets</key>
 	<dict>
 		<key>Material Theme</key>
@@ -991,12 +991,6 @@
 	<true/>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
-	<key>NSNavLastRootDirectory</key>
-	<string>~/Documents/development/dotfiles</string>
-	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{712, 448}</string>
-	<key>NSNavPanelExpandedSizeForSaveMode</key>
-	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -1005,11 +999,6 @@
 	<false/>
 	<key>NSScrollViewShouldScrollUnderTitlebar</key>
 	<false/>
-	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
-	<array>
-		<string>0.000000, 0.000000, 224.000000, 263.000000, NO, NO</string>
-		<string>0.000000, 264.000000, 224.000000, 43.000000, NO, NO</string>
-	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGNjdYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
@@ -1033,19 +1022,12 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
-	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
-	<dict>
-		<key>TB Is Shown</key>
-		<integer>1</integer>
-	</dict>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>330 289 620 392 0 0 1280 778 </string>
+	<string>530 477 620 392 0 0 1680 1028 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>181 309 918 381 0 0 1280 778 </string>
+	<string>328 403 796 473 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1280 335 0 0 1280 778 </string>
-	<key>NSWindow Frame iTerm Window 1</key>
-	<string>261 210 570 452 0 0 1280 778 </string>
+	<string>0 0 1680 335 0 0 1680 1028 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1445,14 +1427,14 @@
 					<key>Text</key>
 					<string></string>
 				</dict>
-				<key>0x66-0x140000</key>
+				<key>0x66-0x180000</key>
 				<dict>
 					<key>Action</key>
 					<integer>23</integer>
 					<key>Text</key>
 					<string></string>
 				</dict>
-				<key>0x73-0x140000</key>
+				<key>0x73-0x180000</key>
 				<dict>
 					<key>Action</key>
 					<integer>29</integer>
@@ -1480,14 +1462,14 @@
 					<key>Text</key>
 					<string>0x1b 0x08</string>
 				</dict>
-				<key>0xf700-0x340000</key>
+				<key>0xf700-0x380000</key>
 				<dict>
 					<key>Action</key>
 					<integer>50</integer>
 					<key>Text</key>
 					<string></string>
 				</dict>
-				<key>0xf701-0x340000</key>
+				<key>0xf701-0x380000</key>
 				<dict>
 					<key>Action</key>
 					<integer>49</integer>
@@ -1583,7 +1565,7 @@
 			<key>Right Option Key Sends</key>
 			<integer>0</integer>
 			<key>Rows</key>
-			<integer>18</integer>
+			<integer>20</integer>
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
@@ -1659,15 +1641,13 @@
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>6D82300A-3FC3-49BB-A04B-99A258A193BE</string>
+	<string>3B8286B7-FA36-42A9-8E78-142B03F6FED5</string>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
-	<key>NoSyncPermissionToShowTip</key>
-	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>530439720.45568401</real>
+	<real>537328670.655164</real>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
 	<key>OpenArrangementAtStartup</key>
@@ -1677,23 +1657,23 @@
 	<key>PointerActions</key>
 	<dict/>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/sean/Documents/development/dotfiles</string>
+	<string>~/Documents/dev/dotfiles/</string>
 	<key>PromptOnQuit</key>
 	<false/>
-	<key>SUAutomaticallyUpdate</key>
-	<true/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/testing.xml?shard=55</string>
+	<string>https://iterm2.com/appcasts/final.xml?shard=59</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-11-23T00:23:21Z</date>
+	<date>2018-01-11T02:55:14Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
+	<key>SUSkippedVersion</key>
+	<string>3.1.5.beta.2</string>
 	<key>Secure Input</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1723,7 +1703,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.1.5.beta.2</string>
+	<string>3.1.5</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>1</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

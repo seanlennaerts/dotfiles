@@ -6,7 +6,7 @@
 * `rbenv install --list` to see available ruby versions
 * `rbenv install 2.4.2` to install new ruby
 * `rbenv global 2.4.2` to make 2.4.2 globally used ruby
-* `rbenv global system` to rever to macOS ruby
+* `rbenv global system` to revert to macOS ruby
 * `rbenv local 2.4.2` to use 2.4.2 locally
 * `rbenv versions` to see all installed rubys
 * ruby is installed in `~/.rbenv/versions/`
@@ -18,6 +18,7 @@
 * `gem list` to see all installed gems
 * `gem outdated` to see old gems, and `gem update` to update all gems
 * `gem cleanup` to remove outdated gems
+* `gem install <gemname> --no-document` to install without documentation (faster)
 
 ## Python development
 * https://github.com/pyenv/pyenv#homebrew-on-mac-os-x
@@ -28,7 +29,7 @@
 * all same as rbenv
 * python is installed in `~/.pyenv/versions/`
 
-## Node development
+## ~~Node development~~
 * https://github.com/creationix/nvm#installation
 * http://sourabhbajaj.com/mac-setup/Node.js/
 * nvm is node version manager
@@ -39,6 +40,22 @@
 * `nvm alias default node` set latest installed node as default
 * node is installed in `~/.nvm/versions/`
 
+## Node development (updated)
+* a versino of node and npm should already installed
+* so we can use npm to install with `npm install -g n`
+* `n` to interactively switch node versions (enter to select)
+* `n latest` or `n lts` (note LTS is recommended) to install node
+
+## go development
+* add the following to `.zshrc`
+```
+export GOPATH=$HOME/go
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
+```
+* `mkdir -p $GOPATH $GOPATH/src $GOPATH/pkg $GOPATH/bin` to build workspace
+
 ## Brew
 * https://docs.brew.sh/FAQ.html
 * `brew list` see installed brews
@@ -47,10 +64,10 @@
 * `brew cleanup` after installing
 * `brewup` alias I made to update
 
-## nvm
+## npm
 * `npm list -g --depth=0` to see all globally installed
 
-## For 3rd party SSDs
+## ~~For 3rd party SSDs~~
 * https://apple.stackexchange.com/a/75956
 * `sudo trimforce enable` to turn on trim for all connected devices
 * `pmset -a sms 0` turns off sudden motion sensor for both battery and ac (-all)
@@ -68,6 +85,4 @@
 * setup eslint:
     * install package "linter-eslint" and DON'T install "linter" dependency (nuclide can use any linter plugins out-of-the-box)
     * `npm install --save-dev eslint-config-rallycoding`
-    * In project root make .eslintrc: `{"extends": "rallycoding"}`
-* Other cool packages:
-    * pigments
+    * In project root make .eslintrc: `{"extends": "rallycoding"}

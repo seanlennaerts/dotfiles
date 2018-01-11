@@ -89,11 +89,11 @@ source $ZSH/oh-my-zsh.sh
 # Aliases
 alias bell="tput bel"
 alias brewup="brew update; brew upgrade; brew cleanup; brew doctor"
-alias dev="cd ~/Documents/development"
-alias help="subl ~/Documents/development/dotfiles/setup-notes.md"
+alias dev="cd ~/Documents/dev"
+alias help="subl ~/Documents/dev/dotfiles/setup-notes.md"
 alias iphone="react-native run-ios --device 'Sean iPhone'"
 alias settings="subl ~/.zshrc"
-alias setup="subl ~/Documents/development/dotfiles/setup.sh"
+alias setup="subl ~/Documents/dev/dotfiles/setup.sh"
 alias ubc="ssh -Y k4c9@remote.ugrad.cs.ubc.ca"
 
 # For rbenv to work properly
@@ -120,5 +120,7 @@ bindkey "^X^_" redo
 
 # golang
 # Setting go env
-# export GOPATH=$HOME/Documents/workspace
-# export PATH=$PATH:$GOPATH/bin
+export GOPATH=$HOME/Documents/dev/go
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
