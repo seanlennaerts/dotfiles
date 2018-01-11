@@ -1,0 +1,40 @@
+"*":
+  "atom-package-deps":
+    ignored: [
+      "linter-eslint"
+    ]
+  core:
+    customFileTypes:
+      "source.ini": [
+        ".buckconfig"
+        ".hgrc"
+      ]
+      "source.json": [
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
+    disabledPackages: [
+      "tree-view"
+    ]
+    telemetryConsent: "limited"
+    titleBar: "custom"
+  editor:
+    fontFamily: "Monaco"
+    fontSize: 12
+  "exception-reporting":
+    userId: "6c3b703e-829c-4f55-a467-aa737aa66d0e"
+  nuclide:
+    installRecommendedPackages: true
+    "nuclide-file-tree":
+      showOpenFiles: false
+      showUncommittedChanges: false
+    "nuclide-flow":
+      canUseFlowBin: true
+    "nuclide-home":
+      showHome: false
+  "tool-bar":
+    visible: false
+  welcome:
+    showOnStartup: false
