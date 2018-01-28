@@ -10,6 +10,8 @@
 	<integer>1</integer>
 	<key>AppleWindowTabbingMode</key>
 	<string>manual</string>
+	<key>AskAboutOutdatedKeyMappingForGuid8E33CFA7-128F-4A0E-878A-49C3A2952E79</key>
+	<false/>
 	<key>CheckTestRelease</key>
 	<false/>
 	<key>Custom Color Presets</key>
@@ -1025,9 +1027,11 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>530 477 620 392 0 0 1680 1028 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>328 403 796 473 0 0 1680 1028 </string>
+	<string>328 456 1016 512 0 0 1680 1028 </string>
+	<key>NSWindow Frame UKCrashReporter</key>
+	<string>127 444 592 584 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1680 335 0 0 1680 1028 </string>
+	<string>0 0 1920 369 0 0 1920 1058 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1646,6 +1650,8 @@
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
+	<key>NoSyncPermissionToShowTip</key>
+	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>537328670.655164</real>
 	<key>OnlyWhenMoreTabs</key>
@@ -1669,7 +1675,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-01-11T02:55:14Z</date>
+	<date>2018-01-20T03:56:51Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUSkippedVersion</key>
@@ -1692,6 +1698,8 @@
 	<integer>1</integer>
 	<key>TabViewType</key>
 	<integer>1</integer>
+	<key>UKCrashReporterLastCrashReportDate</key>
+	<real>1515906432</real>
 	<key>UseBorder</key>
 	<true/>
 	<key>UseLionStyleFullscreen</key>
