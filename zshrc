@@ -93,9 +93,11 @@ alias dev="cd ~/Documents/dev"
 alias help="subl ~/Documents/dev/dotfiles/README.md"
 alias iphone="react-native run-ios --device 'Sean iPhone'"
 alias scrutil="~/Documents/dev/screenutil/scrutil"
+alias small="~/Documents/dev/screenutil/scrutil t 2560 1600 32"
 alias settings="subl ~/.zshrc"
 alias setup="subl ~/Documents/dev/dotfiles/setup.sh"
 alias ubc="ssh -Y k4c9@remote.ugrad.cs.ubc.ca"
+# ssh -i ~/.ssh/id_rsa <username>@<public_ip>
 
 # For rbenv to work properly
 eval "$(rbenv init -)"
@@ -122,6 +124,14 @@ bindkey "^X^_" redo
 # golang
 # Setting go env
 export GOPATH=$HOME/Documents/dev/go
-export GOROOT=/usr/local/opt/go/libexec
+# export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:$GOROOT/bin
+# export PATH=$PATH:$GOROOT/bin
+
+# For fish like auto complete
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+[[ -s "/Users/sean/.gvm/scripts/gvm" ]] && source "/Users/sean/.gvm/scripts/gvm"
+
+# flutter
+export PATH=~/Documents/dev/flutter/bin:$PATH
