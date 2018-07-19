@@ -106,9 +106,9 @@ eval "$(rbenv init -)"
 eval "$(pyenv init -)"
 
 # For nvm to work properly
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # For iterm title bar color to match One Dark theme
 # https://codematters.blog/custom-iterm2-titlebar-background-colors-a088c6f2ec60
@@ -123,15 +123,16 @@ bindkey "^X^_" redo
 
 # golang
 # Setting go env
-export GOPATH=$HOME/Documents/dev/go
+# export GOPATH=$HOME/Documents/dev/go
 # export GOROOT=/usr/local/opt/go/libexec
-export PATH=$PATH:$GOPATH/bin
-# export PATH=$PATH:$GOROOT/bin
+# export PATH=$PATH:$GOPATH/bin
+# # export PATH=$PATH:$GOROOT/bin
 
 # For fish like auto complete
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-[[ -s "/Users/sean/.gvm/scripts/gvm" ]] && source "/Users/sean/.gvm/scripts/gvm"
+# go version manager
+# [[ -s "/Users/sean/.gvm/scripts/gvm" ]] && source "/Users/sean/.gvm/scripts/gvm"
 
 # flutter
-export PATH=~/Documents/dev/flutter/bin:$PATH
+# export PATH=~/Documents/dev/flutter/bin:$PATH

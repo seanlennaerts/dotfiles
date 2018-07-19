@@ -5,7 +5,7 @@
 
 # Make sure signed into AppStore
 while true; do
-  read -p "Did you sign in to AppStore? " y
+  read -p "Did you sign in to AppStore and git clone dotfiles? " y
   case $y in
     [yY]* ) break;;
     * ) exit;;
@@ -19,9 +19,13 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ###############################################################################
 
 # Symlink dotfiles
+ln -s ~/Documents/dev/dotfiles/gemrc ~/.gemrc
 ln -s ~/Documents/dev/dotfiles/gitconfig ~/.gitconfig
+ln -s ~/Documents/dev/dotfiles/gitignore_global ~/.gitignore_global
 ln -s ~/Documents/dev/dotfiles/zshrc ~/.zshrc
 # ln -s ~/Documents/dev/dotfiles/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+
+ln -s ~/Documents/dev/dotfiles/config.cson ~/.atom/config.cson
 
 ###############################################################################
 
@@ -38,7 +42,6 @@ brew update
 brew bundle
 
 brew cleanup
-
 
 ###############################################################################
 

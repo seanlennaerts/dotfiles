@@ -6,26 +6,28 @@ brew "git"
 # brew "heroku-toolbelt" # removed because it prematurely installs node
 brew "mas"
 # brew "nvm" # not officially supported to install via homebrew
+brew "n" # node version manager
 brew "pyenv"
 brew "rbenv"
 brew "zsh"
 # brew "zsh-completions"
 brew "watchman" # for react native development
 brew "yarn" # fast dependency manager
-brew "golang"
+# brew "golang"
 
 cask "adobe-acrobat-reader"
 cask "atom"
-cask "dropbox"
+# cask "dropbox"
 # cask "flux"
-cask "franz"
+# cask "franz"
 cask "google-chrome"
 cask "iterm2"
 cask "moom"
 # cask "sequel-pro"
 cask "skype"
-cask "sublime-text"
+# cask "sublime-text"
 cask "transmission"
+cask "visual-studio-code"
 cask "vlc"
 cask "xquartz"
 
