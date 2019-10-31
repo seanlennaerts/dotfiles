@@ -90,12 +90,12 @@ source $ZSH/oh-my-zsh.sh
 alias bell="tput bel"
 alias brewup="brew update; brew upgrade; brew cleanup; brew doctor"
 alias dev="cd ~/Documents/dev"
-alias help="subl ~/Documents/dev/dotfiles/README.md"
+alias help="code ~/Documents/dev/dotfiles/README.md"
 alias iphone="react-native run-ios --device 'Sean iPhone'"
 alias scrutil="~/Documents/dev/screenutil/scrutil"
 alias small="~/Documents/dev/screenutil/scrutil t 2560 1600 32"
-alias settings="subl ~/.zshrc"
-alias setup="subl ~/Documents/dev/dotfiles/setup.sh"
+alias settings="code ~/.zshrc"
+alias setup="code ~/Documents/dev/dotfiles/setup.sh"
 alias ubc="ssh -Y k4c9@remote.ugrad.cs.ubc.ca"
 # ssh -i ~/.ssh/id_rsa <username>@<public_ip>
 
@@ -123,7 +123,7 @@ bindkey "^X^_" redo
 
 # golang
 # Setting go env
-# export GOPATH=$HOME/Documents/dev/go
+export GOPATH=$HOME/Documents/dev/go
 # export GOROOT=/usr/local/opt/go/libexec
 # export PATH=$PATH:$GOPATH/bin
 # # export PATH=$PATH:$GOROOT/bin
@@ -135,4 +135,7 @@ bindkey "^X^_" redo
 # [[ -s "/Users/sean/.gvm/scripts/gvm" ]] && source "/Users/sean/.gvm/scripts/gvm"
 
 # flutter
-# export PATH=~/Documents/dev/flutter/bin:$PATH
+export PATH=~/Documents/dev/flutter/bin:/Users/sean/Documents/dev/flutter/bin:/Users/sean/.pyenv/shims:/Users/sean/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
+
+# The next line updates PATH for Netlify's Git Credential Helper.
+if [ -f '/Users/sean/.netlify/helper/path.zsh.inc' ]; then source '/Users/sean/.netlify/helper/path.zsh.inc'; fi

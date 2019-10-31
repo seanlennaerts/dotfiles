@@ -41,8 +41,8 @@
 * node is installed in `~/.nvm/versions/`
 
 ## Node development (updated)
-* a versino of node and npm should already installed
-* so we can use npm to install with `npm install -g n`
+* first `brew uninstall node --ignore-dependencies` if already installed (possible by yarn)
+* install using `brew install n`
 * `n` to interactively switch node versions (enter to select)
 * `n latest` or `n lts` (note LTS is recommended) to install node
 

@@ -5,7 +5,7 @@
 
 # Make sure signed into AppStore
 while true; do
-  read -p "Did you sign in to AppStore and git clone dotfiles? " y
+  read -p "Did you clone dotfiles and sign in to AppStore? " y
   case $y in
     [yY]* ) break;;
     * ) exit;;
@@ -25,7 +25,7 @@ ln -s ~/Documents/dev/dotfiles/gitignore_global ~/.gitignore_global
 ln -s ~/Documents/dev/dotfiles/zshrc ~/.zshrc
 # ln -s ~/Documents/dev/dotfiles/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
-ln -s ~/Documents/dev/dotfiles/config.cson ~/.atom/config.cson
+
 
 ###############################################################################
 
@@ -44,6 +44,12 @@ brew bundle
 brew cleanup
 
 ###############################################################################
+
+# post brew bundle symlinking 
+ln -s ~/Documents/dev/dotfiles/config.cson ~/.atom/config.cson
+
+###############################################################################
+
 
 #### Dock
 # Size
