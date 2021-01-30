@@ -1,14 +1,13 @@
 [user]
 	name = Sean Lennaerts
 	email = seanlenny@gmail.com
+	signingKey = 75D8A47B1DA767EF
 [push]
-	default = upstream
-[merge]
-	conflictstyle = diff3
+	default = current
 [credential]
 	helper = osxkeychain
 [core]
-	excludesfile = /Users/sean/.gitignore_global
+	excludesFille = ~/.gitignore_global
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -17,4 +16,22 @@
 
 # This next lines include Netlify's Git Credential Helper configuration in your Git configuration.
 [include]
-  path = /Users/sean/.netlify/helper/git-config
+	path = /Users/sean/.netlify/helper/git-config
+[commit]
+	gpgSign = true
+[gpg]
+	program = gpg
+[pull]
+	rebase = true
+[rebase]
+	autoSquash = true
+	autoStash = true
+[fetch]
+	prune = true
+[alias]
+	oops = commit -a --amend --no-edit
+	please = push --force-with-lease
+	hide = update-index --assume-unchanged
+	unhide = update-index --no-assume-unchanged
+	update = !git fetch origin && git rebase origin/master
+

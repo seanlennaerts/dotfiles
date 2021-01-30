@@ -2,25 +2,38 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/sean/.oh-my-zsh
+export ZSH="/Users/sean/.oh-my-zsh"
 
-# Set name of the theme to load. Optionally, if you set this to "random"
-# it'll load a random theme each time that oh-my-zsh is loaded.
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="sorin"
+
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking in $ZSH/themes/
+# If set to an empty array, this variable will have no effect.
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
-# Uncomment the following line to use hyphen-insensitive completion. Case
-# sensitive completion must be off. _ and - will be interchangeable.
+# Uncomment the following line to use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
 
+# Uncomment the following line to automatically update without prompting.
+# DISABLE_UPDATE_PROMPT="true"
+
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
+
+# Uncomment the following line if pasting URLs and other text is messed up.
+# DISABLE_MAGIC_FUNCTIONS="true"
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -41,14 +54,18 @@ ZSH_THEME="sorin"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
-# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# You can set one of the optional three formats:
+# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# or set a custom format using the strftime function format specifications,
+# see 'man strftime' for details.
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Which plugins would you like to load?
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
@@ -72,9 +89,6 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -88,54 +102,29 @@ source $ZSH/oh-my-zsh.sh
 
 # Aliases
 alias bell="tput bel"
-alias brewup="brew update; brew upgrade; brew cleanup; brew doctor"
+alias brewup="brew update; brew upgrade; brew cleanup"
 alias dev="cd ~/Documents/dev"
-alias help="code ~/Documents/dev/dotfiles/README.md"
-alias iphone="react-native run-ios --device 'Sean iPhone'"
-alias scrutil="~/Documents/dev/screenutil/scrutil"
-alias small="~/Documents/dev/screenutil/scrutil t 2560 1600 32"
 alias settings="code ~/.zshrc"
-alias setup="code ~/Documents/dev/dotfiles/setup.sh"
-alias ubc="ssh -Y k4c9@remote.ugrad.cs.ubc.ca"
-# ssh -i ~/.ssh/id_rsa <username>@<public_ip>
-
-# For rbenv to work properly
-eval "$(rbenv init -)"
-
-# For pyenv to work properly
-eval "$(pyenv init -)"
-
-# For nvm to work properly
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# For iterm title bar color to match One Dark theme
-# https://codematters.blog/custom-iterm2-titlebar-background-colors-a088c6f2ec60
-# echo -e "\033]6;1;bg;red;brightness;41\a"
-# echo -e "\033]6;1;bg;green;brightness;45\a"
-# echo -e "\033]6;1;bg;blue;brightness;62\a"
+alias switch="~/Documents/dev/ddcctl/ddcctl -d 1 -i 15 ; ~/Documents/dev/ddcctl/ddcctl -d 2 -i 16"
+alias work="~/Documents/semantic-health"
 
 # For iterm fix key bindings
 # https://stackoverflow.com/a/29403520
 bindkey "^U" backward-kill-line
 bindkey "^X^_" redo
 
-# golang
-# Setting go env
-export GOPATH=$HOME/Documents/dev/go
-# export GOROOT=/usr/local/opt/go/libexec
-# export PATH=$PATH:$GOPATH/bin
-# # export PATH=$PATH:$GOROOT/bin
+#nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# For fish like auto complete
-# source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+#pyenv
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
 
-# go version manager
-# [[ -s "/Users/sean/.gvm/scripts/gvm" ]] && source "/Users/sean/.gvm/scripts/gvm"
+#direnv hook
+eval "$(direnv hook zsh)"
 
-# flutter
-export PATH=~/Documents/dev/flutter/bin:/Users/sean/Documents/dev/flutter/bin:/Users/sean/.pyenv/shims:/Users/sean/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
-
-# The next line updates PATH for Netlify's Git Credential Helper.
-if [ -f '/Users/sean/.netlify/helper/path.zsh.inc' ]; then source '/Users/sean/.netlify/helper/path.zsh.inc'; fi
+#gpg
+export GPG_TTY=$(tty)

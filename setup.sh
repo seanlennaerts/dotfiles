@@ -1,3 +1,5 @@
+# DEPRECATED
+
 #!/usr/bin/env bash
 
 # Install Xcode Command Line Tools (brew requirement)
