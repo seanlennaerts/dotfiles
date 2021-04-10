@@ -1,3 +1,4 @@
+ZSH_DISABLE_COMPFIX="true"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -103,10 +104,10 @@ source $ZSH/oh-my-zsh.sh
 # Aliases
 alias bell="tput bel"
 alias brewup="brew update; brew upgrade; brew cleanup"
-alias dev="cd ~/Documents/dev"
+alias dev="cd ~/dev"
 alias settings="code ~/.zshrc"
-alias switch="~/Documents/dev/ddcctl/ddcctl -d 1 -i 15 ; ~/Documents/dev/ddcctl/ddcctl -d 2 -i 16"
-alias sem="cd ~/Documents/semantic-health"
+alias switch="~/dev/ddcctl/ddcctl -d 1 -i 15 ; ~/dev/ddcctl/ddcctl -d 2 -i 16"
+alias sem="cd ~/dev/semantic-health"
 
 # For iterm fix key bindings
 # https://stackoverflow.com/a/29403520
@@ -117,11 +118,6 @@ bindkey "^X^_" redo
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-#pyenv
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
 
 #direnv hook
 eval "$(direnv hook zsh)"
