@@ -106,7 +106,7 @@ alias brewup="brew update; brew upgrade; brew cleanup"
 alias dev="cd ~/Documents/dev"
 alias settings="code ~/.zshrc"
 alias switch="~/Documents/dev/ddcctl/ddcctl -d 1 -i 15 ; ~/Documents/dev/ddcctl/ddcctl -d 2 -i 16"
-alias work="~/Documents/semantic-health"
+alias sem="cd ~/Documents/semantic-health"
 
 # For iterm fix key bindings
 # https://stackoverflow.com/a/29403520

@@ -953,13 +953,19 @@
 	<true/>
 	<key>Default Bookmark Guid</key>
 	<string>8E33CFA7-128F-4A0E-878A-49C3A2952E79</string>
-	<key>DimInactiveSplitPanes</key>
+	<key>DimBackgroundWindows</key>
 	<false/>
+	<key>DimInactiveSplitPanes</key>
+	<true/>
+	<key>DimOnlyText</key>
+	<true/>
 	<key>EnableDivisionView</key>
 	<false/>
 	<key>EnableProxyIcon</key>
 	<false/>
 	<key>FocusFollowsMouse</key>
+	<false/>
+	<key>FocusOnRightOrMiddleClick</key>
 	<false/>
 	<key>GlobalKeyMap</key>
 	<dict/>
@@ -1381,6 +1387,15 @@
 					<key>Text</key>
 					<string>0x18 0x1f</string>
 				</dict>
+				<key>0x5c-0x100000-0x2a</key>
+				<dict>
+					<key>Action</key>
+					<integer>29</integer>
+					<key>Label</key>
+					<string></string>
+					<key>Text</key>
+					<string>8E33CFA7-128F-4A0E-878A-49C3A2952E79</string>
+				</dict>
 				<key>0x60-0x100000</key>
 				<dict>
 					<key>Action</key>
@@ -1395,13 +1410,6 @@
 					<key>Text</key>
 					<string></string>
 				</dict>
-				<key>0x73-0x180000</key>
-				<dict>
-					<key>Action</key>
-					<integer>29</integer>
-					<key>Text</key>
-					<string>8E33CFA7-128F-4A0E-878A-49C3A2952E79</string>
-				</dict>
 				<key>0x7a-0x100000</key>
 				<dict>
 					<key>Action</key>
@@ -1409,10 +1417,12 @@
 					<key>Text</key>
 					<string>0x1f</string>
 				</dict>
-				<key>0x7f-0x100000</key>
+				<key>0x7f-0x100000-0x33</key>
 				<dict>
 					<key>Action</key>
 					<integer>11</integer>
+					<key>Label</key>
+					<string></string>
 					<key>Text</key>
 					<string>0x15</string>
 				</dict>
@@ -1607,9 +1617,13 @@
 	<true/>
 	<key>PointerActions</key>
 	<dict/>
+	<key>PreserveWindowSizeWhenTabBarVisibilityChanges</key>
+	<false/>
 	<key>PreventEscapeSequenceFromClearingHistory</key>
 	<false/>
 	<key>PromptOnQuit</key>
+	<false/>
+	<key>SeparateStatusBarsPerPane</key>
 	<false/>
 	<key>ShowBookmarkName</key>
 	<false/>
@@ -1619,6 +1633,8 @@
 	<false/>
 	<key>SoundForEsc</key>
 	<false/>
+	<key>SplitPaneDimmingAmount</key>
+	<real>0.42102814885496187</real>
 	<key>StatusBarIcon</key>
 	<false/>
 	<key>StatusBarPosition</key>
@@ -1630,9 +1646,11 @@
 	<key>TabStyle</key>
 	<integer>1</integer>
 	<key>TabStyleWithAutomaticOption</key>
-	<integer>1</integer>
+	<integer>5</integer>
 	<key>TabViewType</key>
 	<integer>1</integer>
+	<key>TabsHaveCloseButton</key>
+	<false/>
 	<key>UseBorder</key>
 	<false/>
 	<key>UseLionStyleFullscreen</key>
