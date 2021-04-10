@@ -13,6 +13,7 @@ last update macOS Catalina 10.15
     $ ln -s ~/dev/dotfiles/zshrc ~/.zshrc
     $ ln -s ~/dev/dotfiles/gitconfig ~/.gitconfig
     $ ln -s ~/dev/dotfiles/gitignore_global ~/.gitignore_global
+    $ ln -s ~/dev/dotfiles/READ_BEFORE_CLEAN_INSTALL.txt ~/Documents/READ_BEFORE_CLEAN_INSTALL.txt
     ```
 1. `brew install iterm2 visual-studio-code brave-browser` etc.
 1. iterm2 settings:
