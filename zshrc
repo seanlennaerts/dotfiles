@@ -105,7 +105,7 @@ source $ZSH/oh-my-zsh.sh
 alias bell="tput bel"
 alias brewup="brew update; brew upgrade; brew cleanup"
 alias dev="cd ~/dev"
-alias settings="code ~/.zshrc"
+alias settings="code ~/dev/dotfiles"
 alias switch="~/dev/ddcctl/ddcctl -d 1 -i 15 ; ~/dev/ddcctl/ddcctl -d 2 -i 16"
 alias sem="cd ~/dev/semantic-health"
 
@@ -118,6 +118,11 @@ bindkey "^X^_" redo
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+#pyenv 
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
 
 #direnv hook
 eval "$(direnv hook zsh)"

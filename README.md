@@ -26,3 +26,5 @@ last update macOS Catalina 10.15
     - tracking speed 3rd from the right
     - add iterm2 to login items
     - top right corner display lock
+    - disabled space rearrange by most recently used
+    - reset launchpad `defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock`
