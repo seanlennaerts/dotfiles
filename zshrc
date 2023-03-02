@@ -103,11 +103,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Aliases
 alias bell="tput bel"
-alias brewup="brew update; brew upgrade; brew cleanup"
+alias brewup="brew update; brew upgrade; brew autoremove; brew cleanup"
 alias dev="cd ~/dev"
 alias settings="code ~/dev/dotfiles"
-alias switch="~/dev/ddcctl/ddcctl -d 1 -i 15 ; ~/dev/ddcctl/ddcctl -d 2 -i 16"
-alias sem="cd ~/dev/semantic-health"
 
 # For iterm fix key bindings
 # https://stackoverflow.com/a/29403520
@@ -119,11 +117,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-#pyenv 
-eval "$(pyenv init --path)"
-
 #direnv hook
 eval "$(direnv hook zsh)"
 
 #gpg
 export GPG_TTY=$(tty)
+

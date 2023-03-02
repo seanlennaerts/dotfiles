@@ -17,8 +17,6 @@
 # This next lines include Netlify's Git Credential Helper configuration in your Git configuration.
 [include]
 	path = /Users/sean/.netlify/helper/git-config
-[commit]
-	gpgSign = true
 [gpg]
 	program = gpg
 [pull]
