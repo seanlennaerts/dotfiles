@@ -22,7 +22,7 @@ last update macOS Catalina 10.15
    ln -s ~/dev/dotfiles/READ_BEFORE_CLEAN_INSTALL.txt ~/Documents/READ_BEFORE_CLEAN_INSTALL.txt
    ```
 1. install [brew](https://brew.sh/)
-1. `brew install iterm2 visual-studio-code google-chrome caffeine git gnupg moom direnv` etc.
+1. `brew install iterm2 visual-studio-code google-chrome caffeine moom git direnv` etc.
 1. iterm2 settings (can do before launching iterm for first time):
    - specify preferences dir `defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/dev/dotfiles/"`
    - tell iterm2 to use custom preferences `defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true`
@@ -36,3 +36,4 @@ last update macOS Catalina 10.15
    - Uncheck "Show recent applications in Dock"
    - iCloud: ![icloud1](/screenshots/icloud1.png)![icloud2](/screenshots/icloud2.png)
    - Moom: ![moom1](/screenshots/moom1.png)![moom2](/screenshots/moom2.png)
+   - "Remove items from the Trash after 30 days" in Finder preferences
