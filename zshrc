@@ -112,14 +112,19 @@ alias settings="code ~/dev/dotfiles"
 bindkey "^U" backward-kill-line
 bindkey "^X^_" redo
 
-#nvm
+# nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-#direnv hook
+# direnv hook
 eval "$(direnv hook zsh)"
 
-#gpg
+# gpg
 export GPG_TTY=$(tty)
 
+# expo android simulator
+# https://docs.expo.dev/workflow/android-studio-emulator/
+export ANDROID_HOME=/Users/sean/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
