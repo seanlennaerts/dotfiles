@@ -37,3 +37,4 @@ last update macOS Catalina 10.15
    - iCloud: ![icloud1](/screenshots/icloud1.png)![icloud2](/screenshots/icloud2.png)
    - Moom: ![moom1](/screenshots/moom1.png)![moom2](/screenshots/moom2.png)
    - "Remove items from the Trash after 30 days" in Finder preferences
+1. for using keychain to store gpg passphrase use pinentry-mac instead GPG Suite. Follow steps 7 and 8 here: https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key

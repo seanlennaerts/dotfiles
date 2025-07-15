@@ -118,13 +118,60 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # direnv hook
-eval "$(direnv hook zsh)"
+# eval "$(direnv hook zsh)"
 
 # gpg
 export GPG_TTY=$(tty)
 
-# expo android simulator
-# https://docs.expo.dev/workflow/android-studio-emulator/
-export ANDROID_HOME=/Users/sean/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/platform-tools
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/sean/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/sean/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/sean/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/sean/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+# bun completions
+[ -s "/Users/sean/.bun/_bun" ] && source "/Users/sean/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Created by `pipx` on 2024-10-23 02:29:22
+export PATH="$PATH:/Users/sean/.local/bin"
+
+# from Evert:
+apitest () {
+	docker-compose run --rm api poetry run pytest -vv -n auto -m "not integration" --reuse-db $@
+}
+# usage: apitest nautical/plugins/invoicing/tests/test_invoicing.py
+
+# from Dmitri:
+alias k="kubectl"
+# default clusters
+alias gke-dev="gcloud container clusters get-credentials nautical-services-dev"
+alias gke-stg="gcloud container clusters get-credentials nautical-services-stg"
+alias gke-prod="gcloud container clusters get-credentials nautical-services-prod"
+# lists all clusters, can be: | grep "client_name"
+alias gke-list="gcloud container clusters list"
+# gke cluster_name to connect to any cluster
+alias gke="gcloud container clusters get-credentials"
+# proxy a Cloud SQL DB to localhost:5433
+cloud-sql() {
+  pkill -f cloud-sql-proxy
+  cloud-sql-proxy --run-connection-test -p 5433 nautical-commerce:us-central1:$1
+}
+# change namespace
+kns() {
+  kubectl config set-context --current --namespace=$1
+}
+
+# Added by Windsurf
+export PATH="/Users/sean/.codeium/windsurf/bin:$PATH"
+
+# windsurf experiment
+alias code="windsurf"

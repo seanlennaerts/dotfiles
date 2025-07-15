@@ -1,7 +1,7 @@
 [user]
 	name = Sean Lennaerts
 	email = seanlenny@gmail.com
-	signingKey = 75D8A47B1DA767EF
+	signingkey = 87D2D671DFD829E5
 [push]
 	default = current
 [credential]
@@ -31,5 +31,16 @@
 	please = push --force-with-lease
 	hide = update-index --assume-unchanged
 	unhide = update-index --no-assume-unchanged
+	hidden = !git ls-files -v | grep "^[[:lower:]]"
 	update = !git fetch origin && git rebase origin/master
+[commit]
+	gpgsign = true
 
+# from https://blog.gitbutler.com/how-git-core-devs-configure-git/
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+[init]
+	defaultBranch = master
